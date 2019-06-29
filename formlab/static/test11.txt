@@ -1,0 +1,10 @@
+Why IP Address Lookup Exists
+An IP address is a lengthy string of numbers that is difficult for any computer user to remember, and it is susceptible to typographical errors. Instead, computer users enter URLs to go to websites. The URLs are easier to remember and type correctly. Behind the scenes, however, URLs must be translated to their corresponding lengthy numerical IP addresses to load the requested websites.
+
+Typically, a user types a URL (commonly called a website address) into a web browser on a computer or mobile device. The URL goes to the router or modem, which performs a forward domain name server (DNS) lookup using a routing table. The resulting IP address identifies the website the user wants to view. The process is invisible to the user, who sees only the website corresponding to the URL typed in the address bar.
+
+
+Most users rarely need to be concerned with reverse IP lookups. They are used mostly for network troubleshooting, often to find out the domain name of an IP address that is causing a problem.
+
+Lookup Services
+Several internet services support both forward and reverse IP lookup for public addresses. On the internet, these services rely on the Domain Name System and are known as DNS lookup and reverse DNS lookup services.

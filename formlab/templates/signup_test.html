@@ -1,0 +1,59 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'signup/home.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+<div align="center" class="w3-panel w3-border-left w3-pale-red w3-border-red" >
+    <h1>Signup</h1>
+</div>
+<table class="container" >
+    {%if telu%}
+    <div>
+    <thead class="w3-panel w3-border w3-hover-border-red">
+
+        <th>First_name</th>
+        <th>Last_name</th>
+        <th>Email_ID</th>
+        <th>Mobile_No</th>
+        <th>Date_Of_Birth</th>
+        <th>Remark</th>
+        <th>Photo</th>
+    </thead></div>
+        {% for j in telu%}
+        <tr>
+        <td>{{j.First_name}}</td>
+        <td>{{j.Last_name}}</td>
+        <td>{{j.Email_ID}}</td>
+        <td>{{j.Mobile_No}}</td>
+        <td>{{j.Date_Of_Birth}}</td>
+        <td>{{j.Remark}}</td>
+        <td>
+
+            <div class="w3-container">
+  <div class="w3-card-4" style="width:70%">
+    <img src="{{j.Photo.url}}" width="80" height="60">
+    <div class="w3-container w3-center">
+
+    </div>
+  </div>
+</div>
+        </td>
+    </tr>
+    {%endfor%}
+</table>
+{%else%}
+    <p>No Record Found!!</p>
+{%endif%}
+<hr>
+<img src="{% static 'home/images/bk.jpg' %}" alt="pht" width="1300" height="1300">
+
+
+</body>
+</html>
